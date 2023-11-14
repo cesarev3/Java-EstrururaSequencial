@@ -1,37 +1,50 @@
-import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Ex04 {
     public static void main(String[] args) {
-
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
+        
+        int bimestres = 4;
+        double[] notas = new double[bimestres];
 
-        float[] notas = new float[4];
-        float media = 0.00f;
+        carregarNotas(bimestres, entrada, notas);
 
-        try {
-            for (int i = 0; i < 4; i++) {
-                System.out.println("Digite a média do " + (i + 1) +
-                        "º bimestre");
-                System.out.print("> ");
-                notas[i] = entrada.nextFloat();
+        double media = calcularMedia(notas);
+        System.out.printf(Locale.US,"Média do aluno: %.2f", media);
+
+        entrada.close();
+    }
+
+    private static void carregarNotas(int bimestres, Scanner entrada,
+                                      double[] notas) {
+        for (int i = 0; i < bimestres; i++) {
+            System.out.println("Digite a média do " + (i + 1) + "º bimestre");
+            System.out.print("> ");
+
+            double nota;
+            while (true) {
+                validarDouble(entrada);
+                nota = entrada.nextDouble();
+                if (!(nota > 0)) {
+                    System.out.print("Entrada inválida. Digite novamente\n> ");
+                } else break;
             }
-
-            for (int j = 0; j < 4; j++) {
-                media += notas[j];
-            }
-
-            System.out.printf(Locale.US,"Média do aluno: %.2f", (media / 4));
-            entrada.close();
-
+            notas[i] = nota;
         }
-        catch (InputMismatchException e) {
-            System.out.println("Entrada inválida. Utilize apenas números");
-        }
-        finally {
-            System.out.println("\nfim");
+    }
+
+    public static double calcularMedia(double[] input) {
+        double total = 0;
+        for (double v : input) total += v;
+        return total / input.length;
+    }
+
+    private static void validarDouble(Scanner entrada) {
+        while (!entrada.hasNextDouble()) {
+            System.out.print("Entrada inválida. Digite novamente\n> ");
+            entrada.next();
         }
     }
 }

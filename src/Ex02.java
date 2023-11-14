@@ -1,26 +1,25 @@
-import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Ex02 {
     public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    entrada.useLocale(Locale.US);
 
-        Scanner entrada = new Scanner(System.in);
-        entrada.useLocale(Locale.US);
+    System.out.println("Digite um número");
+    System.out.print("> ");
+    validarFloat(entrada);
 
-        try {
-            System.out.println("Digite um número");
-            System.out.print("> ");
-            float numero = entrada.nextFloat();
+    float numero = entrada.nextFloat();
+    System.out.println("O número informado foi " + numero);
 
-            System.out.println("O número informado foi " + numero);
-            entrada.close();
-        }
-        catch (InputMismatchException e) {
-            System.out.println("Entrada inválida. Utilize apenas números");
-        }
-        finally {
-            System.out.println("fim");
+    entrada.close();
+    }
+
+    private static void validarFloat(Scanner entrada) {
+        while (!entrada.hasNextFloat()) {
+            System.out.print("Entrada inválida. Digite novamente\n> ");
+            entrada.next();
         }
     }
 }
