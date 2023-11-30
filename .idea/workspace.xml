@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dd5073a-5633-4815-9aab-9ea554539599" name="Changes" comment="First commit">
+    <list default="true" id="5dd5073a-5633-4815-9aab-9ea554539599" name="Changes" comment="melhorias no código exercicios 1 a 10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex07.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex08.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex08.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex09.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex09.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex10.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,11 +100,20 @@
       <option name="project" value="LOCAL" />
       <updated>1699908598036</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="melhorias no código exercicios 1 a 10">
+      <option name="closed" value="true" />
+      <created>1700001166591</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700001166591</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="melhorias no código exercicios 1 a 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="melhorias no código exercicios 1 a 10" />
   </component>
 </project>
